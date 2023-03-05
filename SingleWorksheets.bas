@@ -3,6 +3,7 @@ Sub singleWKsheets()
 
         
 'Set Headers
+
     Cells(1, 9).Value = "Ticker"
     Cells(1, 10).Value = "Yearly Change"
     Cells(1, 11).Value = "Percent Change"
@@ -12,7 +13,9 @@ Sub singleWKsheets()
     Cells(2, 15).Value = "Greatest % Increase"
     Cells(3, 15).Value = "Greatest % Decrease"
     Cells(4, 15).Value = "Greatest Total Volume"
+    
 'Define Variables and Contstants
+
         Dim TotalVolume As LongLong
         Dim Ticker As String
         Dim YearChange As Double
@@ -21,8 +24,6 @@ Sub singleWKsheets()
         Dim FDValue As Double
         Dim LDValue As Double
         Dim YearOpen As Double
-        Dim YearClose As Double
-        Dim rng As Range
         TotalVolume = 0
         YearChange = 0
         PercentChange = 0
